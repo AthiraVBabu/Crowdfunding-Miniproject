@@ -67,7 +67,7 @@ a {
 }
 
 .navItem:hover {
-  color: #037362;
+  color: #119a11;
   letter-spacing: 0.5px;
   font: "Open Sans";
 }
@@ -106,7 +106,7 @@ a {
   height: 0.1rem;
   position: absolute;
   text-decoration: underline;
-  background-color: #034752;
+  background-color: #0d6022;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
