@@ -100,8 +100,8 @@ export default function HomeComponent(props) {
       <CategoryComponent isHome={true} />
       {/* siteStats */}
       <div className="siteStats">
-        <div className="tagLine">
-          Creative work shows us what’s possible.
+        <div className="tagLine" style={{fontFamily:"Papyrus"}}>
+        Invest in the future of creativity and bring ideas to life.
           <br></br>
           Help fund it here.
         </div>

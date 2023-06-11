@@ -8,6 +8,7 @@ import ConnectWallet from "./components/ConnectWallet";
 import DiscoverComponent from "./components/DiscoverComponent";
 import ProjectComponent from "./components/ProjectComponent";
 import ProfileComponent from "./components/ProfileComponent";
+import Chatbot from "./components/chatbot";
 import { useState } from "react";
 import { ethers } from "ethers";
 import { abi } from "./abi";
@@ -120,6 +121,12 @@ function App() {
             path="project"
             element={checkConnected(
               <ProjectComponent contract={myContract} userAddress={address} />
+            )}
+          />
+          <Route
+            path="chat"
+            element={checkConnected(
+              <Chatbot contract={myContract} userAddress={address} />
             )}
           />
         </Routes>
