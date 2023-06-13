@@ -183,7 +183,7 @@ const styles = {
     borderRadius: '4px',
   },
   botMessage: {
-    backgroundColor: '#dcffcc',
+    backgroundColor: '#cecfdd',
     textAlign: 'left',
     fontWeight: '',
   },

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Erica+One");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html,
 body,
@@ -27,7 +28,7 @@ a {
 .navbar {
   height: 66px;
   width: 100%;
-  border-bottom: 0.1rem solid #dcdedd;
+  /* border-bottom: 0.1rem solid #dcdedd; */
   display: flex;
 }
 
@@ -47,15 +48,17 @@ a {
 }
 
 .centerNavbarContainer {
-  width: 40%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
-  font-family: "Erica One";
-  letter-spacing: 1px;
-  color: #05ce78;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #614bc2;
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
 }
+
 
 .navItem {
   width: fit-content;
@@ -67,7 +70,7 @@ a {
 }
 
 .navItem:hover {
-  color: #119a11;
+  color: #39268a;
   letter-spacing: 0.5px;
   font: "Open Sans";
 }
@@ -80,7 +83,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.1rem solid #dcdedd;
+  /* border-bottom: 0.1rem solid #dcdedd; */
 }
 
 .categoryItem {
@@ -106,7 +109,7 @@ a {
   height: 0.1rem;
   position: absolute;
   text-decoration: underline;
-  background-color: #0d6022;
+  background-color: #39268a;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
@@ -129,16 +132,16 @@ a {
   font-family: "Open Sans";
 }
 
-.siteStats {
+/* .siteStats {
   background: url(./assets/bg1.png) left no-repeat,
     url(./assets/bg2.png) right no-repeat;
   height: 353px;
-}
+} */
 
 .tagLine {
   padding: 30px;
   height: 84px;
-  font-size: 34px;
+  font-size: 31px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,43 +157,62 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+
+
 .stats {
-  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 17%);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.17);
   width: 80%;
-  margin: 0px 10%;
+  margin: 0 auto;
   height: 118px;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .statItem {
-  border: 0.1rem solid #dcdedd;
-  border-right-width: 0px;
-  height: 116px;
-  width: 33.33333%;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.statItem:last-child {
-  border-right-width: 0.1rem;
+.statItem:hover {
+  background-color: #eef1f4;
 }
 
 .statItemValue {
   color: #037362;
   font-size: 30px;
-  font-family: "Open Sans";
-  font-weight: 600;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .statItemTag {
   color: #656969;
-  font-size: 16px;
-  margin-top: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.statItemIcon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #cecfdd;
 }
 
 .suggestions {
@@ -203,7 +225,7 @@ a {
 .suggLeftContainer {
   width: 50%;
   border-right: 0.1rem solid #dcdedd;
-  margin: -10px 0px 24px 0px;
+  margin: 10px 0px 24px 0px;
   display: flex;
   justify-content: flex-end;
 }
@@ -214,7 +236,7 @@ a {
 }
 
 .featuredCard:hover .featuredProjectHeading {
-  color: #037362;
+  color: #6f3bde;
   text-decoration: underline;
 }
 
@@ -248,7 +270,7 @@ a {
 }
 
 .featuredProjectHeading:hover {
-  color: #037362;
+  color: #4e34ce;
   text-decoration: underline;
 }
 
@@ -270,7 +292,7 @@ a {
 
 .featuredProjectAuthor {
   margin: 15px 0px;
-  color: #656969;
+  color: #1e2aac;
   font-family: "Open Sans";
   font-size: 15px;
   width: 100%;
@@ -282,7 +304,7 @@ a {
 .suggRightContainer {
   height: 500px;
   width: 50%;
-  margin: -10px 0px 24px 0px;
+  margin: 10px 0px 24px 0px;
   display: flex;
   justify-content: flex-end;
 }
@@ -339,12 +361,12 @@ a {
 }
 
 .rcmdCardHeading:hover {
-  color: #037362;
+  color: #7f67d5;
   text-decoration: underline;
 }
 
 .rcmdCardFundedPercentage {
-  color: #037362;
+  color: #7f67d5;
   font-family: "Open Sans";
   font-size: 14px;
   letter-spacing: 0.1px;
@@ -398,7 +420,7 @@ a {
 }
 
 .scrollNavBtn:hover {
-  color: #285aeb;
+  color: #204cd0;
 }
 
 .recentUploadsHeading {
@@ -456,7 +478,7 @@ a {
 }
 
 .cardTitle:hover {
-  color: #037362;
+  color: #381c9b;
   text-decoration: underline;
 }
 
@@ -654,7 +676,7 @@ form {
 }
 
 .submitButton {
-  background-color: #6976d9;
+  background-color: #5564d4;
   color: white;
   font-family: sans-serif;
   font-size: 14px;
@@ -686,7 +708,7 @@ form {
   font-family: "Inconsolata", Consolas, monospace;
   font-weight: 800;
   font-size: 4em;
-  color: #05ce78;
+  color: #2c1984;
   width: 550px;
   overflow: hidden;
   border-right: 0.1em solid #282828;
@@ -728,45 +750,36 @@ form {
   letter-spacing: 3px;
   cursor: pointer;
   height: 60px;
+  box-shadow: 0 0 10px 2px #2c1984; /* Blue box shadow effect */
 }
 
-.walletButton:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border: 2px solid #282828;
-  transition: transform 0.2s;
+.walletButton:hover {
+  box-shadow: 0 0 10px 5px #007bff; /* Increased box shadow size on hover */
 }
 
-.walletButton:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border: 2px solid #282828;
-  transition: transform 0.2s;
+.walletButton:focus {
+  outline: none; /* Remove focus outline */
 }
 
-.walletButton:after {
-  transform: translate(3px, 3px);
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
-.walletButton:before {
-  transform: translate(-3px, -3px);
+.walletButton:hover {
+  background-color: #ffffff;
+  color: #282828;
 }
 
-.walletButton:hover:after {
-  transform: translate(0);
-}
-
+.walletButton:hover:after,
 .walletButton:hover:before {
-  transform: translate(0);
+  background-color: #ffffff;
 }
+
 
 /* Discover Component css */
 .discoverHeading {

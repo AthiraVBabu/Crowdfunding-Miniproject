@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import chatbot from "./chat.jpg";
+import chatbot from "./chatbot.png";
 
 export default function NavbarComponent(props) {
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ export default function NavbarComponent(props) {
           className="websiteName"
           style={{
             fontSize: "40px",
-            color: isHovered ? "darkgreen" : "green",
+            color: isHovered ? "#1b0e52" : "#39268a",
             transition: "color 0.3s",
           }}
         >
